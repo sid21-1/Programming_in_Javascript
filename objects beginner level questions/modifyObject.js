@@ -8,3 +8,6 @@ person.age = 21;
 
 console.log(person.age)
 console.log(person.email);
+
+delete person.email;
+console.log(person.email)
