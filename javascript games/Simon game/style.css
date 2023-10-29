@@ -31,6 +31,10 @@ body {
   background-color: purple;
 }
 
-.flash{
+.flash {
   background-color: white;
+}
+
+.userFlash {
+  background-color: cyan;
 }
