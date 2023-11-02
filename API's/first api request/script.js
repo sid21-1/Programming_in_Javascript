@@ -7,6 +7,13 @@ fetch(url)
   })
   .then((data) => {
     console.log(data.fact);
+    return fetch(url);
+  })
+  .then((response)=>{
+    return response.json();
+  })
+  .then((data)=>{
+    console.log(data.fact);
   })
   .catch((err) => {
     console.log("error-", err);
