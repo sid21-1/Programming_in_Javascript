@@ -1,9 +1,13 @@
-let url = "https://catfact.ninja/fact"
+let url = "https://catfact.ninja/fact";
 
 fetch(url)
-.then((response) =>{
-     console.log(response);
-})
-.catch((err)=>{
-    console.log("error-", err)
-})
+  .then((response) => {
+    console.log(response);
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data.fact);
+  })
+  .catch((err) => {
+    console.log("error-", err);
+  });
